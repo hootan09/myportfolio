@@ -14,10 +14,10 @@ export default function HomePage() {
           <div className={styles.content}>
             <h1 className={styles.name}>Mam niki</h1>
             <h6 className={styles.bio}>Node.js Web Developer</h6>
-            <Link href="/projects">
+            <Link href="/projects" as={process.env.BACKEND_URL + "/projects"}>
               <button className={styles.button}>View Work</button>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" as={process.env.BACKEND_URL + "/contact"}>
               <button className={styles.outlined}>Contact Me</button>
             </Link>
           </div>
