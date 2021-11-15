@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarTop}>
-        <Link href="/">
+        <Link href="/" as={process.env.BACKEND_URL + '/'}>
           <div
             className={`${styles.iconContainer} ${
               router.pathname === '/' && styles.active
@@ -31,7 +31,7 @@ const Sidebar = () => {
             />
           </div>
         </Link>
-        <Link href="/github">
+        <Link href="/github" as={process.env.BACKEND_URL + '/github'}>
           <div
             className={`${styles.iconContainer} ${
               router.pathname === '/github' && styles.active
@@ -47,7 +47,7 @@ const Sidebar = () => {
             />
           </div>
         </Link>
-        <Link href="/projects">
+        <Link href="/projects" as={process.env.BACKEND_URL + '/projects'}>
           <div
             className={`${styles.iconContainer} ${
               router.pathname === '/projects' && styles.active
@@ -63,7 +63,7 @@ const Sidebar = () => {
             />
           </div>
         </Link>
-        <Link href="/articles">
+        <Link href="/articles" as={process.env.BACKEND_URL + '/articles'}>
           <div
             className={`${styles.iconContainer} ${
               router.pathname === '/articles' && styles.active
@@ -79,7 +79,7 @@ const Sidebar = () => {
             />
           </div>
         </Link>
-        <Link href="/contact">
+        <Link href="/contact" as={process.env.BACKEND_URL + '/contact'}>
           <div
             className={`${styles.iconContainer} ${
               router.pathname === '/contact' && styles.active
@@ -98,7 +98,7 @@ const Sidebar = () => {
       </div>
       <div className={styles.sidebarBottom}>
         <div className={styles.iconContainer}>
-          <Link href="/about">
+          <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
             <AccountIcon
               fill={
                 router.pathname === "/about"
@@ -110,7 +110,7 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className={styles.iconContainer}>
-          <Link href="/settings">
+          <Link href="/settings" as={process.env.BACKEND_URL + '/settings'}>
             <SettingsIcon fill={
                 router.pathname === "/settings"
                   ? "rgb(225, 228, 232)"

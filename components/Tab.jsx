@@ -7,7 +7,7 @@ const Tab = ({ icon, filename, path }) => {
   const router = useRouter();
 
   return (
-    <Link href={path}>
+    <Link href={path} as={process.env.BACKEND_URL + path}>
       <div
         className={`${styles.tab} ${router.pathname === path && styles.active}`}
       >

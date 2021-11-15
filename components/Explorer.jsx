@@ -29,7 +29,7 @@ const Explorer = () => {
           className={styles.files}
           style={portfolioOpen ? { display: 'block' } : { display: 'none' }}
         >
-          <Link href="/">
+          <Link href="/" as={process.env.BACKEND_URL + '/'}>
             <div className={styles.file}>
               <img
                 src="/react_icon.svg"
@@ -40,7 +40,7 @@ const Explorer = () => {
               <p>home.jsx</p>
             </div>
           </Link>
-          <Link href="/about">
+          <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
             <div className={styles.file}>
               <img
                 src="/html_icon.svg"
@@ -51,7 +51,7 @@ const Explorer = () => {
               <p>about.html</p>
             </div>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" as={process.env.BACKEND_URL + '/contact'}>
             <div className={styles.file}>
               <img
                 src="/css_icon.svg"
@@ -62,7 +62,7 @@ const Explorer = () => {
               <p>contact.css</p>
             </div>
           </Link>
-          <Link href="/projects">
+          <Link href="/projects" as={process.env.BACKEND_URL + '/projects'}>
             <div className={styles.file}>
               <img
                 src="/js_icon.svg"
@@ -73,7 +73,7 @@ const Explorer = () => {
               <p>projects.js</p>
             </div>
           </Link>
-          <Link href="/articles">
+          <Link href="/articles" as={process.env.BACKEND_URL + '/articles'}>
             <div className={styles.file}>
               <img
                 src="/json_icon.svg"
@@ -84,7 +84,7 @@ const Explorer = () => {
               <p>articles.json</p>
             </div>
           </Link>
-          <Link href="/github">
+          <Link href="/github" as={process.env.BACKEND_URL + '/github'}>
             <div className={styles.file}>
               <img
                 src="/markdown_icon.svg"
