@@ -24,7 +24,7 @@ const ArticleCard = ({ article }) => {
       </div>
       <div className={styles.stats}>
         <div className={styles.stat}>
-          <PencilIcon className={styles.icon} /> <p style={{direction: 'rtl;'}}>{article.created_at}</p>
+          <PencilIcon className={styles.icon} /> <p style={{direction: 'rtl'}}>{article.created_at}</p>
         </div>
         <div className={styles.stat}>
           <HeartIcon className={styles.icon} /> {article.likes_count}

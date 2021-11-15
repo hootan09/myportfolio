@@ -48,6 +48,3 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Deploy on Github as Static Page with Travis CI
-
-- [Deploying a Next.js app to Github Pages](https://dev.to/jameswallis/deploying-a-next-js-app-to-github-pages-24pn)
