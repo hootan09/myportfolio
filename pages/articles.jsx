@@ -3,7 +3,6 @@ import styles from '../styles/ArticlesPage.module.css';
 import { getArticles } from './api/articles';
 
 const ArticlesPage = ({ articles }) => {
-  console.log(articles)
   return (
     <>
       <h3>

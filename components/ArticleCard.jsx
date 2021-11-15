@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import PencilIcon from '../components/icons/PencilIcon';
 import HeartIcon from '../components/icons/HeartIcon';
 import CommentIcon from '../components/icons/CommentIcon';
@@ -12,7 +12,7 @@ const ArticleCard = ({ article }) => {
       rel="noopener"
       className={styles.container}
     >
-      <Image
+      <img
         src={article.image}
         alt={article.title}
         width={300}

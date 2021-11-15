@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useState } from 'react';
 import ChevronRight from '../components/icons/ChevronRight';
 import styles from '../styles/Explorer.module.css';
@@ -31,7 +31,7 @@ const Explorer = () => {
         >
           <Link href="/">
             <div className={styles.file}>
-              <Image
+              <img
                 src="/react_icon.svg"
                 alt="React Icon"
                 height={18}
@@ -42,7 +42,7 @@ const Explorer = () => {
           </Link>
           <Link href="/about">
             <div className={styles.file}>
-              <Image
+              <img
                 src="/html_icon.svg"
                 alt="HTML Icon"
                 height={18}
@@ -53,7 +53,7 @@ const Explorer = () => {
           </Link>
           <Link href="/contact">
             <div className={styles.file}>
-              <Image
+              <img
                 src="/css_icon.svg"
                 alt="CSS Icon"
                 height={18}
@@ -64,7 +64,7 @@ const Explorer = () => {
           </Link>
           <Link href="/projects">
             <div className={styles.file}>
-              <Image
+              <img
                 src="/js_icon.svg"
                 alt="JavaScript Icon"
                 height={18}
@@ -75,7 +75,7 @@ const Explorer = () => {
           </Link>
           <Link href="/articles">
             <div className={styles.file}>
-              <Image
+              <img
                 src="/json_icon.svg"
                 alt="JSON Icon"
                 height={18}
@@ -86,7 +86,7 @@ const Explorer = () => {
           </Link>
           <Link href="/github">
             <div className={styles.file}>
-              <Image
+              <img
                 src="/markdown_icon.svg"
                 alt="Markdown Icon"
                 height={18}

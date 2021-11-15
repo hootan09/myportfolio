@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import GitHubCalendar from 'react-github-calendar';
 import RepoCard from '../components/RepoCard';
 import styles from '../styles/GithubPage.module.css';
@@ -17,7 +17,7 @@ const GithubPage = ({ repos, user }) => {
     {user && (
       <div className={styles.user}>
         <div>
-          <Image
+          <img
             src={user.avatar_url}
             className={styles.avatar}
             alt={user.login}

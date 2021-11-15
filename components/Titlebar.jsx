@@ -1,11 +1,11 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import styles from '../styles/Titlebar.module.css';
 
 const Titlebar = () => {
   return (
     <section className={styles.titlebar}>
       <div className={styles.items}>
-        <Image
+        <img
           src="/vscode_icon.svg"
           alt="VSCode Icon"
           height={15}
