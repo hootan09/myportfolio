@@ -9,7 +9,7 @@ const ThemeInfo = ({ icon, name, publisher, theme }) => {
 
   return (
     <div className={styles.container}>
-      <img src={icon} alt={name} height={100} width={100} />
+      <img src={process.env.BACKEND_URL+icon} alt={name} height={100} width={100} />
       <div className={styles.info}>
         <div>
           <h3>{name}</h3>
