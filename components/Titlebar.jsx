@@ -6,7 +6,7 @@ const Titlebar = () => {
     <section className={styles.titlebar}>
       <div className={styles.items}>
         <img
-          src="/vscode_icon.svg"
+          src={process.env.BACKEND_URL+"/vscode_icon.svg"}
           alt="VSCode Icon"
           height={15}
           width={15}
